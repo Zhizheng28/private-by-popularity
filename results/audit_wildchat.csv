@@ -1,0 +1,4 @@
+policy,attack_auc,attack_accuracy,audit_p_value,victim_private_prefixes_shared
+full sharing,1.0,1.0,0.0,0
+per-user isolation,0.514,0.516,0.0663,0
+DP rule,0.483,0.503,0.97,0
