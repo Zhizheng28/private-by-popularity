@@ -1,0 +1,7 @@
+datasets
+tiktoken
+numpy
+pandas
+scipy
+matplotlib
+pytest

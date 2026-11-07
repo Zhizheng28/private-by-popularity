@@ -1,0 +1,8 @@
+data/
+results/
+!results/.gitkeep
+prefix_check_out/
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
