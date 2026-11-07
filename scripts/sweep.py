@@ -25,7 +25,7 @@ import pandas as pd
 
 from pbp.dp import tau_threshold
 
-CHECKPOINT_SETS = ["256", "64,256", "64,256,1024", "64,256,1024,4096"]
+CHECKPOINT_SETS = ["64", "256", "64,256", "64,256,1024", "64,256,1024,4096"]
 EPS_LIST = [0.25, 0.5, 1.0, 2.0, 4.0]
 WINDOWS = [168, 720]
 
