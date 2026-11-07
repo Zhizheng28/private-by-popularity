@@ -1,0 +1,22 @@
+Tokenizer: tiktoken cl100k_base
+Prompts: 831265   windows: 14 (720 h each)   users: 176079
+Prompt length (tokens): median 54, 90th pct 782
+
+Thresholds (eps=1, delta=1e-06): tau=14.8 for Delta=1, tau=61.8 for Delta=4
+
+checkpoint | prompts this long | prefixes with >=2 users | >=tau(D=1) | >=tau(D=4)  [whole dataset]
+        64 |            392877 |                    5091 |         61 |          6
+       256 |            232765 |                    5043 |         75 |          9
+      1024 |             58253 |                    1936 |          8 |          0
+      4096 |              7694 |                     202 |          3 |          0
+
+Per-window (window, prefix) pairs with >= tau(D=4) users: 16
+DP-approved prefixes per window: mean 1.0, max 3
+
+Prompt tokens saved (share of all prompt tokens):
+  full sharing  : 5.51%
+  DP rule       : 1.44%
+  (per-user isolation saves 0% here because only first prompts are used)
+
+GO if DP saves a clear share of what full sharing saves.
+NO-GO -> backup plan 1: --window-hours 168, --eps 2, or --checkpoints 64,256
